@@ -7,8 +7,8 @@ module.exports = function(app){
         res.sendFile(path.join(__dirname, "../public/notes.html"));
     });
 
-    // Route to go to index page
+    /* Route to go to index page
     app.get("/", function(req, res){
         res.sendFile(path.join(__dirname, "../public/index.html"));
-    });
+    });*/
 }

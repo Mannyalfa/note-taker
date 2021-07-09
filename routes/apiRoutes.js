@@ -1,4 +1,6 @@
 const fs = require("fs");
+const { report } = require("process");
+const { v1: uuidv1 } = require('uuid');
 const noteData = require("../db/db.json");
 
 module.exports = function(app){
@@ -21,27 +23,26 @@ module.exports = function(app){
 
     // return notes
     app.get("/api/notes", function(req, res){
-        res.json(notesData);
+        res.json(noteData);
     });
 
     // add notes
     app.post("/api/notes", function(req, res){
+        console.log(req.body)
 
         // unique id
-        if (notesData.length == 0){
-            req.body.id = "0";
-        } else{
-            req.body.id = JSON.stringify(JSON.parse(notesData[notesData.length - 1].id) + 1);
+        let newNote = {
+            title: req.body.title,
+            text: req.body.text,
+            id: uuidv1()
         }
-        
-        console.log("req.body.id: " + req.body.id);
 
         // push to JSON array
-        notesData.push(req.body);
+        noteData.push(newNote);
 
-        // wite notes to database
-        writeToDB(notesData);
-        console.log(notesData);
+        // write notes to database
+        writeToDB(noteData);
+        console.log(noteData);
 
             res.json(req.body);
  
