@@ -71,15 +71,13 @@ Application requires no installation
 MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Image
-![screenshot]()
+![screenshot](https://github.com/Mannyalfa/note-taker/blob/main/images/screenshot.jpg)
 
 ## Languages/Applications
-JavaScript,Node,Jest, Inquirer
+JavaScript, Node.js, Express.js, uuid
 
 ## Repository URL
 https://github.com/Mannyalfa/note-taker
-
-
 
 ## Website
 https://secure-everglades-75358.herokuapp.com/
