@@ -79,8 +79,7 @@ JavaScript,Node,Jest, Inquirer
 ## Repository URL
 https://github.com/Mannyalfa/note-taker
 
-## Test-Demo
-https://drive.google.com/file/d/10gG1QHr7BU2BvyUyHcPe7rWB6-Muv3Kq/view?usp=sharing
+
 
 ## Website
 https://secure-everglades-75358.herokuapp.com/
